@@ -44,21 +44,6 @@ with open(raw_data_csv) as raw_data:
             largest_dec_date = row[0]
 
 
-# (no longer used) print results to terminal using multi-line f-string
-"""
-Chose to optimize code using a tuple to iterate over for printing and writing to a text file. Original code for MVP (minimum viable product) looked like so, using a multi-line f-string:
-"""
-# print(f"""
-# Financial Analysis
-# ___________________________
-# Total Months: {row_count}
-# Total: ${net_pl: .0f}
-# Average Change: ${(tot_avg / (row_count - 1)): .2f}
-# Greatest Increase in Profits: {largest_inc_date}(${largest_inc: .0f})
-# Greatest Decrease in Profits: {largest_dec_date}(${largest_dec: .0f})
-# """)
-
-
 # print results by creating a list of result lines
 results = []
 # add print lines to results using .extend() and a tuple of results strings
@@ -83,17 +68,3 @@ output_file = os.path.join("analysis", "pybank_analysis.txt")
 with open(output_file, "a") as analysis:
     for line in results:
         analysis.write(line + "\n")
-
-    # (no longer used) write each line to analysis
-    """
-    Chose to optimize by using a list of lines and then a for loop to write to .txt file.
-    """
-    # analysis.write("Financial Analysis\n")
-    # analysis.write("___________________________\n")
-    # analysis.write(f"Total Months: {row_count}\n")
-    # analysis.write(f"Total: ${net_pl:.0f}\n")
-    # analysis.write(f"Average Change: ${(tot_avg / (row_count - 1)):.2f}\n")
-    # analysis.write(f"Greatest Increase in Profits: {largest_inc_date} (${largest_inc:.0f})\n")
-    #analysis.write(f"Greatest Decrease in Profits: {largest_dec_date} (${largest_dec:.0f})\n")
-
-
