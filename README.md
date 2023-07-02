@@ -30,6 +30,7 @@ PyPoll Instructions: review a csv of poll data and analyzes votes and calculates
 *   export results to a new txt file in 'analysis' folder
 
 Requirements
+
 Correctly Reads in the CSV (10 points)
 *   Reads in the CSVs for both PyBank and PyPoll using Python (5 points)
 *   Successfully stores the header row (5 points)
