@@ -1,9 +1,13 @@
 # python-challenge
 UNC-CH-DA Module 3-Python Challenge
 
+Instructions for Central Grader:
+*   Clone the repository to your local
+*   Change directory to either PyBank or PyPoll based on which 'main.py' script you are running
+
 Background: Create Python scripts to analyze csv data, report analyses to terminal and export analysis results to new text files.
 
-Instructions
+Assignment:
 *   create a GitHub repository called "python-challenge"
 *   clone repository locally and add a README and (2) folders: 'PrBank' and 'PyPoll'
 * In each folder add a 'main.py' file, a 'Resources' folder to hold the raw csv data for each exercise, and an 'analysis' folder where you will export a new txt file with the results.
