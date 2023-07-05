@@ -69,6 +69,6 @@ for line in results:
 output_file = os.path.join("analysis", "pybank_analysis.txt")
 
 # write results to the new txt ouput file
-with open(output_file, "a") as analysis:
+with open(output_file, "w") as analysis:
     for line in results:
         analysis.write(line + "\n")
